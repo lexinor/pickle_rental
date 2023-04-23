@@ -8,6 +8,7 @@ Config.RenderDistance = 20.0
 
 Config.GiveKeys = function(plate)
     -- Replace this line with your export / event to give keys for your vehicle.
+    TriggerEvent('cd_garage:AddKeys', plate)
 end
 
 Config.Rental = {
@@ -17,9 +18,9 @@ Config.Rental = {
 
 Config.Locations = {
     {
-        title = "Car Rental",
+        title = "Location de voiture",
         blip = { -- Set to nil for no blip.
-            label = "Rental Company (Car)",
+            label = "Location de voiture",
             id = 225,
             scale = 0.85,
             color = 2,
@@ -38,27 +39,27 @@ Config.Locations = {
         },
         vehicles = {
             {
-                label = "Adder",
-                model = `adder`,
-                price = 400,
+                label = "Issi Rally",
+                model = `issi8`,
+                price = 2000,
                 groups = nil -- {["police"] = 4}
             },
             {
-                label = "Blade",
-                model = `blade`,
-                price = 300,
+                label = "Dinka Kanjo SJ",
+                model = `kanjosj`,
+                price = 800,
                 groups = nil -- {["police"] = 4}
             },
             {
-                label = "Faction",
-                model = `faction`,
-                price = 200,
+                label = "Karin Boor",
+                model = `boor`,
+                price = 800,
                 groups = nil -- {["police"] = 4}
             },
             {
-                label = "Sultan RS",
-                model = `sultanrs`,
-                price = 100,
+                label = "Bravado Greenwood",
+                model = `greenwood`,
+                price = 700,
                 groups = nil -- {["police"] = 4}
             },
             {
@@ -70,9 +71,9 @@ Config.Locations = {
         },
     },
     {
-        title = "Boat Rental",
+        title = "Location de bâteaux",
         blip = { -- Set to nil for no blip.
-            label = "Rental Company (Boat)",
+            label = "Location de bâteaux",
             id = 225,
             scale = 0.85,
             color = 2,
@@ -118,102 +119,102 @@ Config.Locations = {
             },
         },
     },
-    {
-        title = "Airplane Rental",
-        blip = { -- Set to nil for no blip.
-            label = "Rental Company (Airplane)",
-            id = 225,
-            scale = 0.85,
-            color = 2,
-            display = 4,
-        },
-        locations = {
-            interact = {
-                coords = vector3(-1621.5917, -3152.7693, 12.9918),
-                heading = 50.5961,
-                ped = `s_m_m_pilot_01` -- Set to nil to use markers.
-            },
-            spawn = {
-                coords = vector3(-1652.0017, -3142.4431, 13.9512),
-                offsetZ = 2.0,
-                radius = 3.0,
-                heading = 329.6698
-            },
-        },
-        vehicles = {
-            {
-                label = "Luxor",
-                model = `luxor`,
-                price = 400,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Shamal",
-                model = `shamal`,
-                price = 300,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Cuban 800",
-                model = `cuban800`,
-                price = 200,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Duster",
-                model = `duster`,
-                price = 100,
-                groups = nil -- {["police"] = 4}
-            },
-        },
-    },
-    {
-        title = "Helicopter Rental",
-        blip = { -- Set to nil for no blip.
-            label = "Rental Company (Helicopter)",
-            id = 225,
-            scale = 0.85,
-            color = 2,
-            display = 4,
-        },
-        locations = {
-            interact = {
-                coords = vector3(-1137.1136, -2869.3716, 12.9460),
-                heading = 57.4263,
-                ped = `s_m_m_pilot_01` -- Set to nil to use markers.
-            },
-            spawn = {
-                coords = vector3(-1145.8541, -2864.4927, 13.9460),
-                offsetZ = 1.0,
-                radius = 3.0,
-                heading = 143.2370
-            },
-        },
-        vehicles = {
-            {
-                label = "Swift",
-                model = `swift`,
-                price = 400,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Super Volito",
-                model = `supervolito`,
-                price = 300,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Maverick",
-                model = `maverick`,
-                price = 200,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Sea Sparrow",
-                model = `seasparrow`,
-                price = 100,
-                groups = nil -- {["police"] = 4}
-            },
-        },
-    },
+    -- {
+    --     title = "Airplane Rental",
+    --     blip = { -- Set to nil for no blip.
+    --         label = "Rental Company (Airplane)",
+    --         id = 225,
+    --         scale = 0.85,
+    --         color = 2,
+    --         display = 4,
+    --     },
+    --     locations = {
+    --         interact = {
+    --             coords = vector3(-1621.5917, -3152.7693, 12.9918),
+    --             heading = 50.5961,
+    --             ped = `s_m_m_pilot_01` -- Set to nil to use markers.
+    --         },
+    --         spawn = {
+    --             coords = vector3(-1652.0017, -3142.4431, 13.9512),
+    --             offsetZ = 2.0,
+    --             radius = 3.0,
+    --             heading = 329.6698
+    --         },
+    --     },
+    --     vehicles = {
+    --         {
+    --             label = "Luxor",
+    --             model = `luxor`,
+    --             price = 400,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --         {
+    --             label = "Shamal",
+    --             model = `shamal`,
+    --             price = 300,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --         {
+    --             label = "Cuban 800",
+    --             model = `cuban800`,
+    --             price = 200,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --         {
+    --             label = "Duster",
+    --             model = `duster`,
+    --             price = 100,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --     },
+    -- },
+    -- {
+    --     title = "Helicopter Rental",
+    --     blip = { -- Set to nil for no blip.
+    --         label = "Rental Company (Helicopter)",
+    --         id = 225,
+    --         scale = 0.85,
+    --         color = 2,
+    --         display = 4,
+    --     },
+    --     locations = {
+    --         interact = {
+    --             coords = vector3(-1137.1136, -2869.3716, 12.9460),
+    --             heading = 57.4263,
+    --             ped = `s_m_m_pilot_01` -- Set to nil to use markers.
+    --         },
+    --         spawn = {
+    --             coords = vector3(-1145.8541, -2864.4927, 13.9460),
+    --             offsetZ = 1.0,
+    --             radius = 3.0,
+    --             heading = 143.2370
+    --         },
+    --     },
+    --     vehicles = {
+    --         {
+    --             label = "Swift",
+    --             model = `swift`,
+    --             price = 400,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --         {
+    --             label = "Super Volito",
+    --             model = `supervolito`,
+    --             price = 300,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --         {
+    --             label = "Maverick",
+    --             model = `maverick`,
+    --             price = 200,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --         {
+    --             label = "Sea Sparrow",
+    --             model = `seasparrow`,
+    --             price = 100,
+    --             groups = nil -- {["police"] = 4}
+    --         },
+    --     },
+    -- },
 }

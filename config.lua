@@ -71,6 +71,41 @@ Config.Locations = {
         },
     },
     {
+        title = "Location de voiture (Aéroport)",
+        blip = { -- Set to nil for no blip.
+            label = "Location de voiture",
+            id = 225,
+            scale = 0.85,
+            color = 2,
+            display = 4,
+        },
+        locations = {
+            interact = {
+                coords = vector3(-1010.1707, -2740.1563, 12.7571),
+                heading = 153.9511,
+                ped = `ig_siemonyetarian` -- Set to nil to use markers.
+            },
+            spawn = {
+                coords = vector3(-1006.1870, -2738.9121, 12.6679),
+                heading = 241.9265,
+            },
+        },
+        vehicles = {
+            {
+                label = "BF Club",
+                model = `club`,
+                price = 700,
+                groups = nil -- {["police"] = 4}
+            },
+            {
+                label = "Grotti Brioso 300",
+                model = `brioso2`,
+                price = 600,
+                groups = nil -- {["police"] = 4}
+            },
+        },
+    },
+    {
         title = "Location de bâteaux",
         blip = { -- Set to nil for no blip.
             label = "Location de bâteaux",

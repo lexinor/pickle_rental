@@ -106,6 +106,35 @@ Config.Locations = {
         },
     },
     {
+        title = "Location de voiture (Sandy Shore)",
+        blip = { -- Set to nil for no blip.
+            label = "Location de voiture",
+            id = 225,
+            scale = 0.85,
+            color = 2,
+            display = 4,
+        },
+        locations = {
+            interact = {
+                coords = vector3(1976.8090, 3750.5938, 31.1792),
+                heading = 204.3208,
+                ped = `ig_siemonyetarian` -- Set to nil to use markers.
+            },
+            spawn = {
+                coords = vector3(1982.7936, 3751.0283, 31.1741),
+                heading = 193.4142,
+            },
+        },
+        vehicles = {
+            {
+                label = "Cheburek",
+                model = `cheburek`,
+                price = 700,
+                groups = nil -- {["police"] = 4}
+            },
+        },
+    },
+    {
         title = "Location de bâteaux",
         blip = { -- Set to nil for no blip.
             label = "Location de bâteaux",

@@ -138,22 +138,22 @@ Config.Locations = {
         title = "Location de bâteaux",
         blip = { -- Set to nil for no blip.
             label = "Location de bâteaux",
-            id = 225,
+            id = 410,
             scale = 0.85,
             color = 2,
             display = 4,
         },
         locations = {
             interact = {
-                coords = vector3(-794.6424, -1510.8400, 0.5952),
-                heading = 17.4605,
-                ped = `ig_siemonyetarian` -- Set to nil to use markers.
+                coords = vector3(-796.3644, -1512.7871, 0.5952),
+                heading = 301.6162,
+                ped = `s_m_y_uscg_01` -- Set to nil to use markers.
             },
             spawn = {
-                coords = vector3(-803.7595, -1505.3850, -0.5),
+                coords = vector3(-795.4637, -1517.4663, -0.4748),
                 offsetZ = 2.0,
                 radius = 3.0,
-                heading = 118.0231
+                heading = 112.1233
             },
         },
         vehicles = {
@@ -161,12 +161,6 @@ Config.Locations = {
                 label = "Dinghy",
                 model = `dinghy`,
                 price = 400,
-                groups = nil -- {["police"] = 4}
-            },
-            {
-                label = "Tug",
-                model = `tug`,
-                price = 300,
                 groups = nil -- {["police"] = 4}
             },
             {
@@ -178,6 +172,18 @@ Config.Locations = {
             {
                 label = "Jetski",
                 model = `seashark`,
+                price = 100,
+                groups = nil -- {["police"] = 4}
+            },
+            {
+                label = "Jetski",
+                model = `seashark2`,
+                price = 100,
+                groups = nil -- {["police"] = 4}
+            },
+            {
+                label = "Jetski",
+                model = `seashark3`,
                 price = 100,
                 groups = nil -- {["police"] = 4}
             },

@@ -68,6 +68,7 @@ function RentVehicle(index, vehicleIndex)
             local vehicleCfg = location.vehicles[vehicleIndex]
             local spawn = location.locations.spawn
             local vehicle = CreateVeh(vehicleCfg.model, spawn.coords.x, spawn.coords.y, spawn.coords.z, spawn.heading, true, false)
+            Entity(vehicle).state.fuel = 100
             if props then 
                 props.plate = plate
                 SetVehicleProperties(vehicle, props)
